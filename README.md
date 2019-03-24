@@ -1,0 +1,2 @@
+# gudako.net
+Coming soon
