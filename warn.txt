@@ -1,0 +1,3 @@
+いやぁいやぁ、元気？
+
+とNSをCloudflareに移行したついでにNetlifyからCloudflare Pagesに移行してみるのであった。
