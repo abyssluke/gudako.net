@@ -1,1 +1,235 @@
-<html><head><title>gudako.net</title></head><body><h1>gudako.net</h1><hr>Coming soon</body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>gudako.net</title>
+<style>
+* {
+ box-sizing: border-box;
+}
+body {
+ margin: 0;
+ padding: 0;
+ background-color: #fff;
+ overflow-wrap: anywhere;
+ word-break: normal;
+ line-break: strict;
+ font-family: sans-serif;
+}
+section {
+ max-width: 960px;
+ margin: 0 auto;
+ box-sizing: content-box;
+ padding: 1rem;
+}
+
+header {
+ width: 100%;
+ padding: 30px 4% 10px;
+ background-color: #ddd;
+}
+footer {
+ width: 100%;
+ padding: 30px;
+ background-color: #ddd;
+ text-align: center;
+ margin: 20px 0 0 0;
+}
+h1 {
+ margin: 0; padding:0;
+ font-size: 20px;
+}
+
+h1 a {
+ text-decoration: none;
+ color: #000;
+}
+
+.section_title {
+ padding: 5px;
+ margin: 0 0 5px 0;
+ background: linear-gradient(transparent, #aaaa7f);
+}
+
+h2 {
+ margin: 0; padding:0;
+ font-size: 16px;
+}
+
+.container {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+ gap: 1rem;
+ justify-content: center;
+}
+
+.card {
+ padding: 15px;
+ border: 1px solid #ccc;
+ text-align: center;
+ border-radius: 5px;
+ box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.50)
+}
+
+.card_logo {
+ font-size: 3em;
+ object-fit: cover;
+}
+
+.card_img {
+ display: block;
+ width: 100%;
+ object-fit: cover;	
+}
+.card_img_mini {
+ display: block;
+ width: 4em;
+ object-fit: cover;
+ margin: auto;
+}
+
+.card_img_pc { display: block; width: 100%; object-fit: cover; }
+.card_img_sp { display: none; }
+@media only screen and (max-width : 767px){
+ .card_img_pc { display: none; }
+ .card_img_sp { display: block; width: 100%; object-fit: cover; }
+}
+
+.force_left_alignment {
+ text-align: left !important;
+}
+
+</style>
+<link href="https://cdn.gudako.net/assets/fa6.6.0/css/fontawesome.css" rel="stylesheet">
+<link href="https://cdn.gudako.net/assets/fa6.6.0/css/brands.css" rel="stylesheet">
+<link href="https://cdn.gudako.net/assets/fa6.6.0/css/solid.css" rel="stylesheet">
+</head>
+<body>
+<header><h1 id="topheader"><a href="#">gudako.net</a></h1></header>
+
+<section>
+<div class="section_title"><h2 id="notice"><i class="fa-solid fa-circle-info"></i> Notice</h2></div>
+<div class="card force_left_alignment">
+ 現在このサイトは仮運用中です。予告なくデザイン等が変更になる可能性があります。
+</div>
+</section>
+
+<section>
+<div class="section_title"><h2 id="links"><i class="fa-solid fa-link"></i> Link</h2></div>
+<div class="container">
+  <div class="card">
+  <span class="card_logo"><i class="fa-brands fa-x-twitter"></span></i><br>
+  <a href="https://x.com/abyssluke" target="_blank" title="Twitter(𝕏)">@abyssluke</a>
+ </div>
+ <div class="card">
+  <span class="card_logo">略!</span><br>
+  <a href="https://abyssluke.hatenablog.com/" target="_blank" title="Blog">ブログへ</a>
+ </div>
+ <div class="card">
+  <span class="card_logo"><i class="fa-solid fa-note-sticky"></i></span><br>
+  <a href="https://scrapbox.io/abyssluke/" target="_blank" title="Scrapbox(Cosense)">Scrapbox(Cosense)</a>
+ </div>
+ <div class="card">
+  <span class="card_logo"><i class="fa-brands fa-bluesky"></i></span><br>
+  <a href="https://bsky.app/profile/abyssluke.bsky.social" target="_blank" title="Bluesky">@abyssluke.bsky.social</a>
+ </div>
+ <div class="card">
+  <span class="card_logo">ﾐﾟ</span><br>
+  <a href="https://misskey.io/@abyssluke" target="_blank" title="Misskey">abyssluke@misskey.io</a>
+ </div>
+ <div class="card">
+  <span class="card_logo"><i class="fa-brands fa-instagram"></i></span><br>
+  <a href="https://www.instagram.com/abyssluke/" target="_blank" title="Instagram">@abyssluke</a>
+ </div>
+ <div class="card">
+  <span class="card_logo"><i class="fa-brands fa-threads"></i></span><br>
+  <a href="https://www.threads.net/@abyssluke" target="_blank" title="Threads">@abyssluke</a>
+ </div>
+ <div class="card">
+  <span class="card_logo"><i class="fa-brands fa-keybase"></i></span><br>
+  <a href="https://keybase.io/abyssluke" target="_blank" title="Keybase">@abyssluke</a>
+ </div>
+ <div class="card">
+  <span class="card_logo"><i class="fa-brands fa-github"></i></span><br>
+  <a href="https://github.com/abyssluke" target="_blank" title="GitHub">@abyssluke</a>
+ </div>
+
+ <div class="card">
+  <span class="card_logo">AI</span><br>
+  <a href="https://mega.nz/folder/U90kyDhb#UMavW4EepRye9LUcSLY-bA" target="_blank" title="AIイラスト保管庫(MEGA)">AIイラスト保管庫</a>
+ </div>
+ 
+<!--
+ <div class="card">
+  <img src="https://placehold.jp/1eff00/ffffff/480x480.png?text=For%20PC&css=%7B%22border-radius%22%3A%2215px%22%2C%22background%22%3A%22%20-webkit-gradient(linear%2C%20left%20top%2C%20left%20bottom%2C%20from(%23666666)%2C%20to(%23cccccc))%22%7D" class="card_img_pc"><img src="https://placehold.jp/1eff00/ffffff/480x200.png?text=For%20SP&css=%7B%22border-radius%22%3A%2215px%22%2C%22background%22%3A%22%20-webkit-gradient(linear%2C%20left%20top%2C%20left%20bottom%2C%20from(%23005500)%2C%20to(%2300cc00))%22%7D" class="card_img_sp"><br>
+  こんばんは世界！<br>
+  環境によって分岐する画像の例
+  <br>
+  <a href="https://example.com">サイトへ</a>
+ </div>
+ <div class="card">
+  <img src="https://placehold.jp/400x200.png" class="card_img"><br>
+  おはよう世界！
+  <br>
+  <a href="https://example.com">サイトへ</a>
+ </div>
+ <div class="card">
+  <img src="https://placehold.jp/480x200.png" class="card_img"><br>
+  ぬるぽ世界！<br><br>
+  このサイト云々ローレムイプサムなんちゃらかんちゃら。<br>
+  あーああー。
+ </div>
+ <div class="card">
+  ｶﾞｯ世界！<br>
+  <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce turpis mi, blandit vel blandit vitae, efficitur non nisl. Ut feugiat.
+ </div>
+ <div class="card">
+  Hello world!<br>
+  <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce turpis mi, blandit vel blandit vitae, efficitur non nisl. Ut feugiat.
+ </div>
+ <div class="card">
+  Good evening world!
+ </div>
+ <div class="card">
+  <a href="https://example.com"><img src="https://placehold.jp/3d4070/ffffff/500x500.png?text=%E7%94%BB%E5%83%8F%E3%82%AB%E3%83%BC%E3%83%89%0A%E3%81%AE%E3%81%BF%E3%81%A7%0A%E3%82%84%E3%82%8B%E3%81%AE%E3%82%82%0A%E3%81%82%E3%82%8A%E3%81%A7%E3%81%99%E3%81%AD" class="card_img"></a>
+ </div>
+-->
+</div>
+</section>
+
+<section>
+<div class="section_title"><h2 id="contact_us"><i class="fa-solid fa-envelope"></i> 連絡先など</h2></div>
+<div class="container">
+ <div class="card">
+   <picture><source type="image/webp" srcset="https://cdn.gudako.net/img_ext/gudako-m.webp"><img src="https://cdn.gudako.net/img_ext/gudako-m.png" alt="mail address" border="0" class="card_img"></picture><br>GnuPG(PGP)公開鍵<br><a href="https://rita.xyz/pubkey-mail.txt" target="_blank">メール用</a>, <a href="https://rita.xyz/pubkey-new.txt" target="_blank">メイン鍵</a><br><br>フィンガープリント
+   <br>メール用: 0x79C2C450CF8C4FA9<br>メイン鍵: 0x97F19DD46F7E8F22
+ </div>
+ <div class="card">
+  <img src="https://cdn.gudako.net/img_ext/new_logo.svg" class="card_img_mini" alt="Mashmallow Image Copyright by Diver Down Inc."><br>
+  <a href="https://marshmallow-qa.com/abyssluke" target="_blank">マシュマロ(匿名で送信可)</a><br>
+ </div>
+ <div class="card">
+  <span class="card_logo"><i class="fa-solid fa-triangle-exclamation"></i></span><br> Twitter(𝕏)/BlueskyのDMはフォローしている人から以外は受け付けない設定となっています。DMでの連絡をご希望の方は一度Mentionなどでご連絡ください。
+ </div>
+</div>
+</section>
+
+
+<section>
+<div class="section_title"><h2 id="what_is_this"><i class="fa-solid fa-circle-question"></i> ここってなんぞや？</h2></div>
+<div class="card force_left_alignment">
+ @abysslukeに絡むただのリンク集さ。<br>
+ <br>
+ 各種表記など<br>
+ <ul>
+ <li>Hosted by Cloudflare Pages</li>
+ <li>アイコンなどの表示に<a href="https://fontawesome.com/" target="_blank">FontAwesome</a>を利用しています。</li>
+ <li>マシュマロ <img src="https://cdn.gudako.net/img_ext/new_logo.svg" style="width:1em;" alt="Mashmallow Image Copyright by Diver Down Inc.">の画像は株式会社Diver Downに著作権があります。 <a href="https://tayori.com/faq/a7e775d112c305f6164107ce6a0222ca17e334d3/detail/99330aa4905e9852dedb921ce6ee7d2713a975dd/" target="_blank">画像出典</a></li>
+ </ul>
+</div>
+</section>
+<footer>©2024 gudako.net</footer>
+</body></html>
