@@ -1,0 +1,8 @@
+User-Agent: *
+# Cloudflare CDN-CGI
+Disallow: /cdn-cgi/
+
+# Markdown file for Repository
+Disallow: /README.md
+Disallow: /AUTHORS.md
+
